@@ -1,13 +1,7 @@
 result = []
 
-def firstNend(word) : 
-    wordlen = len(word)
-    
-    if(wordlen > 1000) :
-        return 0
-    
+def firstNend(word, wordlen) : 
     feword = word[0]+word[wordlen-1]
-
     result.append(feword)
 
 def __init__() :
@@ -17,9 +11,12 @@ def __init__() :
 
     for i in range(num) :
         word = input()
+        wordlen = len(word)
+
         if (len(word) > 1000) :
             return 0
-        firstNend(word)
+        
+        firstNend(word, wordlen)
     
     for i in range(num) :
         print(result[i])
